@@ -1,4 +1,4 @@
-<%= form_tag({:action => :parse}, :method => "post", :html => { :multipart => true }) do %>
-  <p><%= file_field_tag 'picture'%></p>
+<%= form_tag({:action => :parse}, :multipart => true) do %>
+  <%= file_field_tag 'picture' %>
   <p><%= submit_tag("parse") %></p>
 <% end %>
